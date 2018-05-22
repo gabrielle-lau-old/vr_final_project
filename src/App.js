@@ -26,14 +26,28 @@ export default class spaceman extends React.Component {
                 <TextScene />
                 <Model 
                     source={{
-                        obj: asset('/nasa-aqua-satellite-obj/nasa-aqua-satellite.obj'),
-                        mtl: asset('/nasa-aqua-satellite-obj/nasa-aqua-satellite.mtl')
+                        obj: asset('/house4/House4.obj'),
+                        mtl: asset('/house4/House4.mtl')
                     }}
                     style={{
                         transform: [
-                            { translate: [-1, 0, -0.75] },
-                            { scale: 0.075 },
-                            { rotateX: 180 },
+                            { translate: [-1, -0.5, -0.75] },
+                            { scale: 0.1 },
+                            { rotateX: 0 },
+                            { rotateY: -360 } 
+                        ]
+                    }}
+                />
+                <Model 
+                    source={{
+                        obj: asset('/house3/House3.obj'),
+                        mtl: asset('/house3/House3.mtl')
+                    }}
+                    style={{
+                        transform: [
+                            { translate: [-1.5, -0.5, -0.5] },
+                            { scale: 0.1 },
+                            { rotateX: 0 },
                             { rotateY: -360 } 
                         ]
                     }}
@@ -54,12 +68,13 @@ export default class spaceman extends React.Component {
                 />
                 <Model 
                     source={{
-                        obj: asset('/EMU/EMU.obj'),
-                        mtl: asset('/EMU/EMU.mtl')
+                        obj: asset('/house/Budynek_5.obj')
+                        // mtl: asset('/baymax/Bigmax_White_OBJ.mtl')
                     }}
                     style={{
                         transform: [
-                            { translate: [-1.75, -0.5, -0.5] },
+                            { translate: [5, -1, -3] },
+                            // { translate: [-1.75, -0.5, -0.5] },
                             { scale: 0.5 },
                             { rotateY: 180 } 
                         ]
