@@ -54,29 +54,29 @@ export default class spaceman extends React.Component {
                 />
                 <Model 
                     source={{
-                        obj: asset('/Loral-1300Com-obj/Loral-1300Com-main.obj'),
-                        mtl: asset('/Loral-1300Com-obj/Loral-1300Com-main.mtl')
+                        obj: asset('/balloon/balloon.obj'),
+                        mtl: asset('/balloon/balloon.mtl')
                     }}
                     style={{
                         transform: [
-                            { translate: [3, 0, -10] },
-                            { scale: 0.01 },
-                            { rotateX: 30 },
-                            { rotateY: -45 } 
+                            { translate: [6, 0, 10] },
+                            { scale: 0.07 },
+                            { rotateX: 0 },
+                            { rotateY: 0 } 
                         ]
                     }}
                 />
                 <Model 
                     source={{
-                        obj: asset('/house/Budynek_5.obj')
-                        // mtl: asset('/baymax/Bigmax_White_OBJ.mtl')
+                        obj: asset('/Dog_model/Dog.obj'),
+                        mtl: asset('/Dog_model/Dog.mtl')
                     }}
                     style={{
                         transform: [
-                            { translate: [5, -1, -3] },
+                            { translate: [-1, -0.5, -0.3] },
                             // { translate: [-1.75, -0.5, -0.5] },
-                            { scale: 0.5 },
-                            { rotateY: 180 } 
+                            { scale: 0.07 },
+                            { rotateY: 190 } 
                         ]
                     }}
                 />
