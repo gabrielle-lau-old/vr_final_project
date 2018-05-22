@@ -80,6 +80,21 @@ export default class spaceman extends React.Component {
                         ]
                     }}
                 />
+                    <Model 
+                    source={{
+                        obj: asset('/ladder/ladder.obj'),
+                        mtl: asset('/ladder/ladder.mtl')
+                    }}
+                    style={{
+                        transform: [
+                            { translate: [0.5, -6, -2.5] },
+                            // { translate: [-1.75, -0.5, -0.5] },
+                            { scale: 2 },
+                            { rotateY: 160 }, 
+                            { rotateX: -20 }
+                        ]
+                    }}
+                />
             </View>
         );
     }
