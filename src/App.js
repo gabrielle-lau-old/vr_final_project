@@ -8,9 +8,11 @@ import {
   StyleSheet,
   Model,
   Animated,
+
 } from 'react-vr';
 import Easing from 'react-vr';
 import TextScene from './TextScene';
+import VideoScene from './VideoScene';
 
 const AnimatedModel=Animated.createAnimatedComponent(Model);
 
