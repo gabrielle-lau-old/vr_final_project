@@ -23,7 +23,8 @@ export default class TextScene extends React.Component {
                 >Aqua Satellite Video click here</Text>
                 <Text
                     style={{
-                        backgroundColor: '#777879',
+                        backgroundColor: '#A482DF',
+                        borderRadius: 0.3,
                         fontSize: 0.5,
                         fontWeight: '400',
                         paddingLeft: 0.2,
