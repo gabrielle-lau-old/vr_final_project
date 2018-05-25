@@ -1,13 +1,66 @@
 import React from 'react';
-import { Text, View, StyleSheet, asset, Sound, VrButton} from 'react-vr';
+import { Text, View, StyleSheet, asset, Sound, VrButton, Video, VideoPano} from 'react-vr';
     
-
+// renderItems is in camel case!
 export default class TextScene extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            video: false,
+        };
+    }
+    startVideo(){
+        this.setState=({
+            video: true,
+        });
+    }
+    // must be 3 ===
+    renderItems(){
+        if (this.state.video===false){
+            return<Text
+                    style={{
+                        backgroundColor: '#A482DF',
+                        borderRadius: 0.3,
+                        fontSize: 0.5,
+                        fontWeight: '400',
+                        paddingLeft: 0.2,
+                        paddingRight: 0.2,
+                        textAlign: 'center',
+                        textAlignVertical: 'center',
+                        transform: [
+                            { translate: [1, 2, -5] },
+                            { scale: 0.5 },
+                            { rotateY: 20 }
+                        ]
+                    }}
+                >Video</Text>
+            } else{
+                return<Video
+                        source={{uri:'C:/Users/laumingyi/Documents/VR/vr_final_project/static_assets/edited_quad_low_res.webm'}}
+                        style={{
+                            height:2,
+                            width:3.56,
+                            transform:[
+                                {translate:[1, 2, -5]},
+                                {rotateY:90}
+                            ]
+                        }}
+                />
+                
+                
+            }
+        }
+    
 
     render () {
         return (
             <View>
+                <VrButton onClick={this.startVideo.bind(this)}>
+                    {this.renderItems()}
+                    
+                </VrButton>
+
                 <VrButton
                 onClickSound={{ wav: asset('MONO-036.wav') }}
                 >
@@ -30,6 +83,17 @@ export default class TextScene extends React.Component {
                     >Click here for music
                     </Text>
                 </VrButton>                
+                <Video
+                        source={{uri:'C:/Users/laumingyi/Documents/VR/vr_final_project/static_assets/Nasa_aqua.mp4'}}
+                        style={{
+                            height:2,
+                            width:3.56,
+                            transform:[
+                                {translate:[1, 2, -5]},
+                                {rotateY:90}
+                            ]
+                        }}
+                />
                 <Text
                     style={{
                         backgroundColor: '#A482DF',
@@ -41,11 +105,12 @@ export default class TextScene extends React.Component {
                         textAlign: 'center',
                         textAlignVertical: 'center',
                         transform: [
-                            { translate: [1, 2.5, -5] },
+                            { translate: [1, 2, -5] },
                             { scale: 0.5 }
                         ]
                     }}
                 >Video</Text>
+
                 <Text
                     style={{
                         backgroundColor: '#A482DF',
