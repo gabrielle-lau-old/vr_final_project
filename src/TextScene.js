@@ -105,3 +105,9 @@ export default class TextScene extends React.Component {
         )
     }
 }
+
+// //Making the 360 video as background
+// <VideoPano source={{
+//   uri: 'http://YOURDOMAIN/YOURVIDEO.mp4',
+//   stereo: 'BOTTOM_TOP_3D' // this is specific to YouTube 3D videos
+// }} />
