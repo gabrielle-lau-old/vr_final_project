@@ -1,10 +1,14 @@
 import React from 'react';
-import { Text, View, StyleSheet } from 'react-vr';
+import { Text, View, StyleSheet, asset, Sound, VrButton} from 'react-vr';
+    
 
 export default class TextScene extends React.Component {
+
+
     render () {
         return (
             <View>
+                
                 <Text
                     style={{
                         backgroundColor: '#777879',
@@ -20,7 +24,12 @@ export default class TextScene extends React.Component {
                             { rotateY: 90 } 
                         ]
                     }}
-                >Aqua Satellite Video click here</Text>
+                >Piano music here
+                    <Sound
+                    source={{ wav: asset('MONO-036.wav') }}
+                    loop={true}
+                    />
+                </Text>
                 <Text
                     style={{
                         backgroundColor: '#A482DF',

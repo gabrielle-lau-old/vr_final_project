@@ -10,7 +10,7 @@ import {
   Animated,
 
 } from 'react-vr';
-import Easing from 'react-vr';
+import Easing from 'react-native';
 import TextScene from './TextScene';
 import VideoScene from './VideoScene';
 
