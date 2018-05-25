@@ -45,7 +45,7 @@ export default class TextScene extends React.Component {
                             { scale: 0.5 }
                         ]
                     }}
-                >Loral-1300Com</Text>
+                >Video</Text>
                 <Text
                     style={{
                         backgroundColor: '#A482DF',
@@ -61,7 +61,7 @@ export default class TextScene extends React.Component {
                             { scale: 0.25 }
                         ]
                     }}
-                >The Mechanic</Text>
+                >Look down</Text>
             </View>
         )
     }
