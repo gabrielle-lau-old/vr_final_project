@@ -22,7 +22,7 @@ export default class TextScene extends React.Component {
                             textAlign: 'center',
                             textAlignVertical: 'center',
                             transform: [
-                                { translate: [-4, 1, -0.5] },
+                                { translate: [-4, 1, -1] },
                                 { scale: 0.5 },
                                 { rotateY: 90 } 
                             ]
@@ -41,14 +41,15 @@ export default class TextScene extends React.Component {
                         textAlign: 'center',
                         textAlignVertical: 'center',
                         transform: [
-                            { translate: [1, 2.5, -12] },
+                            { translate: [1, 2.5, -5] },
                             { scale: 0.5 }
                         ]
                     }}
                 >Loral-1300Com</Text>
                 <Text
                     style={{
-                        backgroundColor: '#777879',
+                        backgroundColor: '#A482DF',
+                        borderRadius: 0.3,
                         fontSize: 0.5,
                         fontWeight: '400',
                         paddingLeft: 0.2,
