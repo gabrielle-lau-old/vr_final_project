@@ -31,13 +31,13 @@ export default class TextScene extends React.Component {
                         transform: [
                             { translate: [1, 2, -5] },
                             { scale: 0.5 },
-                            { rotateY: 20 }
+                            { rotateY: -20 }
                         ]
                     }}
                 >Video</Text>
             } else{
                 return<Video
-                        source={{uri:'C:/Users/laumingyi/Documents/VR/vr_final_project/static_assets/edited_quad_low_res.webm'}}
+                        source={{uri:'/static_assets/edited_quad_low_res.webm'}}
                         style={{
                             height:2,
                             width:3.56,
@@ -83,33 +83,7 @@ export default class TextScene extends React.Component {
                     >Click here for music
                     </Text>
                 </VrButton>                
-                <Video
-                        source={{uri:'C:/Users/laumingyi/Documents/VR/vr_final_project/static_assets/Nasa_aqua.mp4'}}
-                        style={{
-                            height:2,
-                            width:3.56,
-                            transform:[
-                                {translate:[1, 2, -5]},
-                                {rotateY:90}
-                            ]
-                        }}
-                />
-                <Text
-                    style={{
-                        backgroundColor: '#A482DF',
-                        borderRadius: 0.3,
-                        fontSize: 0.5,
-                        fontWeight: '400',
-                        paddingLeft: 0.2,
-                        paddingRight: 0.2,
-                        textAlign: 'center',
-                        textAlignVertical: 'center',
-                        transform: [
-                            { translate: [1, 2, -5] },
-                            { scale: 0.5 }
-                        ]
-                    }}
-                >Video</Text>
+                
 
                 <Text
                     style={{
