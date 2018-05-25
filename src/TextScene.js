@@ -37,13 +37,13 @@ export default class TextScene extends React.Component {
                 >Video</Text>
             } else{
                 return<Video
-                        source={{uri:'/static_assets/edited_quad_low_res.webm'}}
+                        source={{uri:'/static_assets/fireworks.mov'}}
                         style={{
-                            height:2,
-                            width:3.56,
+                            height:4,
+                            width:3,
                             transform:[
                                 {translate:[1, 2, -5]},
-                                {rotateY:90}
+                               
                             ]
                         }}
                 />
@@ -56,6 +56,8 @@ export default class TextScene extends React.Component {
     render () {
         return (
             <View>
+
+
                 <VrButton onClick={this.startVideo.bind(this)}>
                     {this.renderItems()}
                     
@@ -108,6 +110,5 @@ export default class TextScene extends React.Component {
 
 // //Making the 360 video as background
 // <VideoPano source={{
-//   uri: 'http://YOURDOMAIN/YOURVIDEO.mp4',
-//   stereo: 'BOTTOM_TOP_3D' // this is specific to YouTube 3D videos
+//   uri: 'file:///C:/Users/laumingyi/Documents/VR/vr_final_project/static_assets/edited_quad_low_res.webm',
 // }} />
