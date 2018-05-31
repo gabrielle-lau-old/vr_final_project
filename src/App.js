@@ -10,9 +10,9 @@ import {
   Animated,
 
 } from 'react-vr';
-import Easing from 'react-native';
+import Easing from 'react-vr';
 import TextScene from './TextScene';
-import VideoScene from './VideoScene';
+// import VideoScene from './VideoScene';
 
 const AnimatedModel=Animated.createAnimatedComponent(Model);
 
@@ -29,7 +29,7 @@ export default class spaceman extends React.Component {
         Animated.timing(
             this.state.balloonRotZ,
             {
-                toValue:-3000,
+                toValue:-300,
                 duration:10000,
                 delay:2000,
                 easing: Easing.inOut,
@@ -56,7 +56,7 @@ export default class spaceman extends React.Component {
                             {translateZ:1},
                             { scale: 0.01 },
                             { rotateX: 0 },
-                            { rotateY: this.state.balloonRotZ } 
+                            { rotateZ: this.state.balloonRotZ } 
                         ]
                     }}
                 />
