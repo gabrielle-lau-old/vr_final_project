@@ -77,7 +77,7 @@ export default class TextScene extends React.Component {
                             textAlign: 'center',
                             textAlignVertical: 'center',
                             transform: [
-                                { translate: [-1.75, 2.5, -5] },
+                                { translate: [-1.8, 2.5, -5] },
                                 { scale: 0.5 },
                                 { rotateY: 0 } 
                             ]

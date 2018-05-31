@@ -51,10 +51,10 @@ export default class spaceman extends React.Component {
                     style={{
                         transform: [
                             // { translate: [6, 0, 10] },
-                            {translateX:1},
-                            {translateY:0},
-                            {translateZ:1},
-                            { scale: 0.01 },
+                            {translateX:-3},
+                            {translateY:15},
+                            {translateZ:-40},
+                            { scale: 0.1 },
                             { rotateX: 0 },
                             { rotateZ: this.state.balloonRotZ } 
                         ]
