@@ -34,12 +34,12 @@ export default class TextScene extends React.Component {
                             { rotateY: -20 }
                         ]
                     }}
-                >Video</Text>
+                >Click here for video</Text>
             } else{
                 return<Video
-                        source={{uri:'/static_assets/fireworks.mov'}}
+                        source={{uri:'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4'}}
                         style={{
-                            height:4,
+                            height:3,
                             width:3,
                             transform:[
                                 {translate:[1, 2, -5]},
@@ -77,9 +77,9 @@ export default class TextScene extends React.Component {
                             textAlign: 'center',
                             textAlignVertical: 'center',
                             transform: [
-                                { translate: [-4, 1, -1] },
+                                { translate: [-1.75, 2.5, -5] },
                                 { scale: 0.5 },
-                                { rotateY: 90 } 
+                                { rotateY: 0 } 
                             ]
                         }}
                     >Click here for music
@@ -98,11 +98,12 @@ export default class TextScene extends React.Component {
                         textAlign: 'center',
                         textAlignVertical: 'center',
                         transform: [
-                            { translate: [-2.5, 0.5, -3] },
-                            { scale: 0.25 }
+                            { translate: [-4.5, 3.25, -5] },
+                            { scale: 0.5 },
+                            {rotateY:20}
                         ]
                     }}
-                >Look down</Text>
+                >Out-of-body Meditation</Text>
             </View>
         )
     }
